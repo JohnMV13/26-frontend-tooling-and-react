@@ -21,17 +21,17 @@ class App extends React.Component {
 
     this.state = {
       content: Cowsay.say({
-        text: faker.random.words() 
+        text: faker.random.words(), 
       }),
-    }
+    };
     this.updateCowsay = this.updateCowsay.bind(this);
     this.updateState = this.updateState.bind(this);
   }
 
   updateCowsay() {
     this.updateState(Cowsay.say({
-      text: faker.random.words()
-      })
+      text: faker.random.words(),
+    })
     );
   }
 
